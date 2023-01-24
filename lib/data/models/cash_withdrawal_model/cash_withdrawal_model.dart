@@ -1,4 +1,24 @@
-import 'dart:convert';
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'cash_withdrawal_model.freezed.dart';
+part 'cash_withdrawal_model.g.dart';
+
+@Freezed()
+class CashWithdrawalModel with _$CashWithdrawalModel {
+  const factory CashWithdrawalModel({
+    required String name,
+    required double minExtractionAmount,
+    required double minExtractionCommision,
+    required double extractionCommisionPercent,
+    required double maxExtractionAmount,
+    required double maxExtractionCommisionZero,
+    required int maxExtractionCount,
+  }) = _CashWithdrawalModel;
+
+  factory CashWithdrawalModel.fromJson(Map<String, dynamic> json) =>
+      _$CashWithdrawalModelFromJson(json);
+}
+
+/* import 'dart:convert';
 
 CashWithdrawal cashWithdrawalFromJson(String str) =>
     CashWithdrawal.fromJson(json.decode(str));
@@ -65,13 +85,13 @@ class CashWithdrawal {
         "maxExtractionCommisionZero": maxExtractionCommisionZero,
         "maxExtractionCount": maxExtractionCount,
       };
-}
+} */
 
 
 /*
 Estructura JSON
 {
-  "nombre": "Rapipago",
+  "name": "Rapipago",
   "minExtractionAmount": 500.00,
   "minExtractionCommision": 100.00,
   "extractionCommisionPercent": 1.000,

@@ -1,4 +1,8 @@
+import 'package:cost_app_dinamica/domain/blocs/cash_withdrawal/cash_withdrawal_bloc.dart';
+import 'package:cost_app_dinamica/domain/blocs/deposit_money/deposit_money_bloc.dart';
+import 'package:cost_app_dinamica/domain/blocs/transfer_money/transfer_money_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,16 +27,28 @@ class HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-                onPressed: () =>
-                    Navigator.pushNamed(context, '/ingresar-dinero'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ingresar-dinero');
+                  /* context
+                      .read<DepositMoneyBloc>()
+                      .add(const DepositMoneyEvent.get()); */
+                },
                 child: const Text("Ingresar dinero")),
             ElevatedButton(
-                onPressed: () =>
-                    Navigator.pushNamed(context, '/retiro-efectivo'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/retiro-efectivo');
+                  /* context
+                      .read<CashWithdrawalBloc>()
+                      .add(const CashWithdrawalEvent.get()); */
+                },
                 child: const Text("Retiro efectivo")),
             ElevatedButton(
-                onPressed: () =>
-                    Navigator.pushNamed(context, '/transferir-dinero'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/transferir-dinero');
+                  /* context
+                      .read<TransferMoneyBloc>()
+                      .add(const TransferMoneyEvent.get()); */
+                },
                 child: const Text("Transferir dinero")),
           ],
         ),

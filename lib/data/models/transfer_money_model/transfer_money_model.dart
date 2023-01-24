@@ -1,4 +1,27 @@
-// To parse this JSON data, do
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'transfer_money_model.freezed.dart';
+part 'transfer_money_model.g.dart';
+
+@Freezed()
+class TransferMoneyModel with _$TransferMoneyModel {
+  const factory TransferMoneyModel({
+    required double trdSc1Max,
+    required double trdScMesMaxImpo,
+    required int trdScMesMaxCant,
+    required double trdPorcentaje,
+    required double trdCostoMinimo,
+    required double treSc1Max,
+    required double treScMesMaxImpo,
+    required int treScMesMaxCant,
+    required double trePorcentaje,
+    required double treCostoMinimo,
+  }) = _TransferMoneyModel;
+
+  factory TransferMoneyModel.fromJson(Map<String, dynamic> json) =>
+      _$TransferMoneyModelFromJson(json);
+}
+
+/* // To parse this JSON data, do
 //
 //     final welcome = welcomeFromJson(jsonString);
 
@@ -79,8 +102,7 @@ class Welcome {
         "TRE_PORCENTAJE": trePorcentaje,
         "TRE_COSTO_MINIMO": treCostoMinimo
       };
-}
-
+} */
 
 /* 
 Estructura JSON
@@ -94,7 +116,6 @@ Estructura JSON
   "TRE_SC_MES_MAX_IMPO": 100.00,
   "TRE_SC_MES_MAX_CANT": 3,
   "TRE_PORCENTAJE": 21.000,
-  "TRE_COSTO_MINIMO": 200.00,
-  "Sst": "sdaa"
+  "TRE_COSTO_MINIMO": 200.00
 }
  */

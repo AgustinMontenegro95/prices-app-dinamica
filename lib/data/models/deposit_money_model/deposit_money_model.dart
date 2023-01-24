@@ -1,4 +1,24 @@
-import 'dart:convert';
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'deposit_money_model.freezed.dart';
+part 'deposit_money_model.g.dart';
+
+@Freezed()
+class DepositMoneyModel with _$DepositMoneyModel {
+  const factory DepositMoneyModel({
+    required String name,
+    required double minDepositAmount,
+    required double maxDepositAmount,
+    required double minDepositCommision,
+    required double depositCommisionPercent,
+    required double maxDepositCommisionZero,
+    required int maxDepositCount,
+  }) = _DepositMoneyModel;
+
+  factory DepositMoneyModel.fromJson(Map<String, dynamic> json) =>
+      _$DepositMoneyModelFromJson(json);
+}
+
+/* import 'dart:convert';
 
 DepositMoney depositMoneyFromJson(String str) =>
     DepositMoney.fromJson(json.decode(str));
@@ -64,13 +84,12 @@ class DepositMoney {
         "maxDepositCommisionZero": maxDepositCommisionZero,
         "maxDepositCount": maxDepositCount,
       };
-}
-
+} */
 
 /* 
 Estructura JSON
 {
-  "nombre": "Rapipago",
+  "name": "Rapipago",
   "minDepositAmount": 500.00,
   "maxDepositAmount": 100000.00,
   "minDepositCommision": 0.00,

@@ -17,11 +17,10 @@ const List<Condition> blockWidthConstraints = [
 ];
 
 EdgeInsets blockPadding(BuildContext context) => ResponsiveValue(context,
-        defaultValue: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
+        defaultValue: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
         valueWhen: [
           const Condition.smallerThan(
-              name: TABLET,
-              value: EdgeInsets.symmetric(horizontal: 10, vertical: 45))
+              name: DESKTOP, value: EdgeInsets.only(bottom: 25))
         ]).value!;
 
-const EdgeInsets blockMargin = EdgeInsets.fromLTRB(10, 25, 10, 32);
+const EdgeInsets blockMargin = EdgeInsets.fromLTRB(10, 10, 10, 0);

@@ -4,6 +4,6 @@ part of 'transfer_money_bloc.dart';
 class TransferMoneyState with _$TransferMoneyState {
   const factory TransferMoneyState.initial() = _Initial;
   const factory TransferMoneyState.loading() = _Loading;
-  const factory TransferMoneyState.loaded(
-      {TransferMoneyModel? transferMoneyModel}) = _Loaded;
+  const factory TransferMoneyState.loaded({PlacesModelTM? placesModelTM}) =
+      _Loaded;
 }

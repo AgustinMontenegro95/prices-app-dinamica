@@ -1,8 +1,4 @@
-import 'package:cost_app_dinamica/domain/blocs/cash_withdrawal/cash_withdrawal_bloc.dart';
-import 'package:cost_app_dinamica/domain/blocs/deposit_money/deposit_money_bloc.dart';
-import 'package:cost_app_dinamica/domain/blocs/transfer_money/transfer_money_bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

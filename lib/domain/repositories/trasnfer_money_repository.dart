@@ -1,14 +1,14 @@
-import 'package:cost_app_dinamica/data/models/transfer_money_model/transfer_money_model.dart';
+import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
 
 class TransferMoneyRepository {
-  Future<TransferMoneyModel> getTransferMoney() async {
-    TransferMoneyModel transferMoneyModel;
+  Future<PlacesModelTM> getTransferMoney() async {
+    PlacesModelTM placesModelTM;
 
     try {
       //solicitud a api
 
       //simulacion
-      transferMoneyModel = TransferMoneyModel.fromJson({
+      placesModelTM = PlacesModelTM.fromJson({
         "trdSc1Max": 500.00,
         "trdScMesMaxImpo": 100.00,
         "trdScMesMaxCant": 3,
@@ -21,7 +21,7 @@ class TransferMoneyRepository {
         "treCostoMinimo": 200.00
       });
 
-      return transferMoneyModel;
+      return placesModelTM;
     } catch (e) {
       throw Exception(e.toString());
     }

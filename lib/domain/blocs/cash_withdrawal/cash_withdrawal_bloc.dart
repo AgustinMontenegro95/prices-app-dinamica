@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:cost_app_dinamica/data/models/cash_withdrawal_model/cash_withdrawal_model.dart';
+import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
 import 'package:cost_app_dinamica/domain/repositories/cash_withdrawal_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -20,9 +20,9 @@ class CashWithdrawalBloc
     return event.when(get: () async {
       emit(const _Loading());
       try {
-        final cashWithdrawalModel =
+        final placesModelCW =
             await cashWithdrawalRepository.getCashWithdrawal();
-        emit(_Loaded(cashWithdrawalModel: cashWithdrawalModel));
+        emit(_Loaded(placesModelCW: placesModelCW));
       } catch (e) {
         debugPrint("error$e");
       }

@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:cost_app_dinamica/data/models/deposit_money_model/deposit_money_model.dart';
+import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
 import 'package:cost_app_dinamica/domain/repositories/deposit_money_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -19,9 +19,8 @@ class DepositMoneyBloc extends Bloc<DepositMoneyEvent, DepositMoneyState> {
     return event.when(get: () async {
       emit(const _Loading());
       try {
-        final depositMoneyModel =
-            await depositMoneyRepository.getDepositMoney();
-        emit(_Loaded(depositMoneyModel: depositMoneyModel));
+        final placesModelDM = await depositMoneyRepository.getDepositMoney();
+        emit(_Loaded(placesModelDM: placesModelDM));
       } catch (e) {
         debugPrint("error$e");
       }

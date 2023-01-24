@@ -23,12 +23,12 @@ class _CashWithdrawalPageState extends State<CashWithdrawalPage> {
         return state.maybeWhen(
           initial: () => const CircularProgressIndicator(),
           loading: () => const CircularProgressIndicator(),
-          loaded: (cashWithdrawal) {
+          loaded: (placesModelCM) {
             return Scaffold(
               appBar: AppBar(
                 title: const Text("Retiro de efectivo"),
               ),
-              body: Text(cashWithdrawal!.name),
+              //body: Text(placesModelTM!.name),
             );
           },
           orElse: () => const CircularProgressIndicator(),

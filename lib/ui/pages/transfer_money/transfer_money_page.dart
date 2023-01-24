@@ -21,14 +21,14 @@ class _TransferMoneyPageState extends State<TransferMoneyPage> {
     return BlocBuilder<TransferMoneyBloc, TransferMoneyState>(
       builder: (context, state) {
         return state.maybeWhen(
-          initial: () => Text("initial"),
-          loading: () => Text("loading"),
-          loaded: (transferMoney) {
+          initial: () => const Text("initial"),
+          loading: () => const Text("loading"),
+          loaded: (placesModelTM) {
             return Scaffold(
               appBar: AppBar(
                 title: const Text("Transferencia de dinero"),
               ),
-              body: Text(transferMoney!.trdPorcentaje.toString()),
+              //body: Text(placesModelTM!.trdPorcentaje.toString()),
             );
           },
           orElse: () => const CircularProgressIndicator(),

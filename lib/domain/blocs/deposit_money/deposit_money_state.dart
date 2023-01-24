@@ -4,6 +4,6 @@ part of 'deposit_money_bloc.dart';
 class DepositMoneyState with _$DepositMoneyState {
   const factory DepositMoneyState.initial() = _Initial;
   const factory DepositMoneyState.loading() = _Loading;
-  const factory DepositMoneyState.loaded(
-      {DepositMoneyModel? depositMoneyModel}) = _Loaded;
+  const factory DepositMoneyState.loaded({PlacesModelDM? placesModelDM}) =
+      _Loaded;
 }

@@ -1,14 +1,14 @@
-import 'package:cost_app_dinamica/data/models/cash_withdrawal_model/cash_withdrawal_model.dart';
+import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
 
 class CashWithdrawalRepository {
-  Future<CashWithdrawalModel> getCashWithdrawal() async {
-    CashWithdrawalModel cashWithdrawalModel;
+  Future<PlacesModelCW> getCashWithdrawal() async {
+    PlacesModelCW placesModelCW;
 
     try {
       //solicitud a api
 
       //simulacion
-      cashWithdrawalModel = CashWithdrawalModel.fromJson({
+      placesModelCW = PlacesModelCW.fromJson({
         "name": "Rapipago",
         "minExtractionAmount": 500.00,
         "minExtractionCommision": 100.00,
@@ -18,7 +18,7 @@ class CashWithdrawalRepository {
         "maxExtractionCount": 0
       });
 
-      return cashWithdrawalModel;
+      return placesModelCW;
     } catch (e) {
       throw Exception(e.toString());
     }

@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:cost_app_dinamica/data/models/transfer_money_model/transfer_money_model.dart';
+import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
 import 'package:cost_app_dinamica/domain/repositories/trasnfer_money_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -19,9 +19,8 @@ class TransferMoneyBloc extends Bloc<TransferMoneyEvent, TransferMoneyState> {
     return event.when(get: () async {
       emit(const _Loading());
       try {
-        final transferMoneyModel =
-            await transferMoneyRepository.getTransferMoney();
-        emit(_Loaded(transferMoneyModel: transferMoneyModel));
+        final placesModelTM = await transferMoneyRepository.getTransferMoney();
+        emit(_Loaded(placesModelTM: placesModelTM));
       } catch (e) {
         debugPrint("error$e");
       }

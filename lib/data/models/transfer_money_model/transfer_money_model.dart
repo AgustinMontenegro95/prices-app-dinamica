@@ -5,16 +5,26 @@ part 'transfer_money_model.g.dart';
 @Freezed()
 class TransferMoneyModel with _$TransferMoneyModel {
   const factory TransferMoneyModel({
-    required double trdSc1Max,
-    required double trdScMesMaxImpo,
-    required int trdScMesMaxCant,
-    required double trdPorcentaje,
-    required double trdCostoMinimo,
-    required double treSc1Max,
-    required double treScMesMaxImpo,
-    required int treScMesMaxCant,
-    required double trePorcentaje,
-    required double treCostoMinimo,
+    /* required String trdSc1Max,
+    required String trdScMesMaxImpo,
+    required String trdScMesMaxCant,
+    required String trdPorcentaje,
+    required String trdCostoMinimo,
+    required String treSc1Max,
+    required String treScMesMaxImpo,
+    required String treScMesMaxCant,
+    required String trePorcentaje,
+    required String treCostoMinimo, */
+    required String TRD_SC_1MAX,
+    required String TRD_SC_MES_MAX_IMPO,
+    required String TRD_SC_MES_MAX_CANT,
+    required String TRD_PORCENTAJE,
+    required String TRD_COSTO_MINIMO,
+    required String TRE_SC_1MAX,
+    required String TRE_SC_MES_MAX_IMPO,
+    required String TRE_SC_MES_MAX_CANT,
+    required String TRE_PORCENTAJE,
+    required String TRE_COSTO_MINIMO,
   }) = _TransferMoneyModel;
 
   factory TransferMoneyModel.fromJson(Map<String, dynamic> json) =>

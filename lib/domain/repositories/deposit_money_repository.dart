@@ -1,14 +1,28 @@
+import 'dart:convert';
 import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
+import 'package:http/http.dart' as http;
 
 class DepositMoneyRepository {
   Future<PlacesModelDM> getDepositMoney() async {
     PlacesModelDM placesModelDM;
 
     try {
-      //solicitud a api
+      //request to api
+      var url = Uri.https('cost.dinamicaonline.com.ar', 'api/v1/deposit_money');
+      var response = await http.post(url, headers: {
+        "Access-Control-Allow-Origin": "*",
+        'Content-Type': 'application/json',
+        'Accept': '*/*'
+      });
+      print(response.body);
 
-      //simulacion
-      placesModelDM = PlacesModelDM.fromJson({
+      Map data = jsonDecode(utf8.decode(response.bodyBytes));
+      print(data);
+
+      placesModelDM = PlacesModelDM.fromJson(data as Map<String, dynamic>);
+
+      //simulation
+      /* placesModelDM = PlacesModelDM.fromJson({
         "places": [
           {
             "name": "PagoFacil",
@@ -18,38 +32,9 @@ class DepositMoneyRepository {
             "depositCommisionPercent": 0.000,
             "maxDepositCommisionZero": 25000.00,
             "maxDepositCount": 0
-          },
-          {
-            "name": "Rapipago",
-            "minDepositAmount": 700.00,
-            "maxDepositAmount": 150000.00,
-            "minDepositCommision": 0.00,
-            "depositCommisionPercent": 0.000,
-            "maxDepositCommisionZero": 27000.00,
-            "maxDepositCount": 3
-          },
-          {
-            "name": "Dinamica",
-            "minDepositAmount": 700.00,
-            "maxDepositAmount": 150000.00,
-            "minDepositCommision": 0.00,
-            "depositCommisionPercent": 0.000,
-            "maxDepositCommisionZero": 27000.00,
-            "maxDepositCount": 3
-          },
-          {
-            "name": "Pago Mis Cuentas",
-            "minDepositAmount": 700.00,
-            "maxDepositAmount": 150000.00,
-            "minDepositCommision": 0.00,
-            "depositCommisionPercent": 0.000,
-            "maxDepositCommisionZero": 27000.00,
-            "maxDepositCount": 3
           }
         ]
-      });
-      print(placesModelDM);
-      print(placesModelDM.places);
+      }); */
 
       return placesModelDM;
     } catch (e) {

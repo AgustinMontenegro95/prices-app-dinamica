@@ -168,21 +168,21 @@ mixin _$TransferMoneyState {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(PlacesModelTM? placesModelTM) loaded,
+    required TResult Function(TransferMoneyModel? transferMoneyModel) loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult? Function(TransferMoneyModel? transferMoneyModel)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult Function(TransferMoneyModel? transferMoneyModel)? loaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -267,7 +267,7 @@ class _$_Initial implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(PlacesModelTM? placesModelTM) loaded,
+    required TResult Function(TransferMoneyModel? transferMoneyModel) loaded,
   }) {
     return initial();
   }
@@ -277,7 +277,7 @@ class _$_Initial implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult? Function(TransferMoneyModel? transferMoneyModel)? loaded,
   }) {
     return initial?.call();
   }
@@ -287,7 +287,7 @@ class _$_Initial implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult Function(TransferMoneyModel? transferMoneyModel)? loaded,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -374,7 +374,7 @@ class _$_Loading implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(PlacesModelTM? placesModelTM) loaded,
+    required TResult Function(TransferMoneyModel? transferMoneyModel) loaded,
   }) {
     return loading();
   }
@@ -384,7 +384,7 @@ class _$_Loading implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult? Function(TransferMoneyModel? transferMoneyModel)? loaded,
   }) {
     return loading?.call();
   }
@@ -394,7 +394,7 @@ class _$_Loading implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult Function(TransferMoneyModel? transferMoneyModel)? loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -447,9 +447,9 @@ abstract class _$$_LoadedCopyWith<$Res> {
   factory _$$_LoadedCopyWith(_$_Loaded value, $Res Function(_$_Loaded) then) =
       __$$_LoadedCopyWithImpl<$Res>;
   @useResult
-  $Res call({PlacesModelTM? placesModelTM});
+  $Res call({TransferMoneyModel? transferMoneyModel});
 
-  $PlacesModelTMCopyWith<$Res>? get placesModelTM;
+  $TransferMoneyModelCopyWith<$Res>? get transferMoneyModel;
 }
 
 /// @nodoc
@@ -462,25 +462,26 @@ class __$$_LoadedCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? placesModelTM = freezed,
+    Object? transferMoneyModel = freezed,
   }) {
     return _then(_$_Loaded(
-      placesModelTM: freezed == placesModelTM
-          ? _value.placesModelTM
-          : placesModelTM // ignore: cast_nullable_to_non_nullable
-              as PlacesModelTM?,
+      transferMoneyModel: freezed == transferMoneyModel
+          ? _value.transferMoneyModel
+          : transferMoneyModel // ignore: cast_nullable_to_non_nullable
+              as TransferMoneyModel?,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $PlacesModelTMCopyWith<$Res>? get placesModelTM {
-    if (_value.placesModelTM == null) {
+  $TransferMoneyModelCopyWith<$Res>? get transferMoneyModel {
+    if (_value.transferMoneyModel == null) {
       return null;
     }
 
-    return $PlacesModelTMCopyWith<$Res>(_value.placesModelTM!, (value) {
-      return _then(_value.copyWith(placesModelTM: value));
+    return $TransferMoneyModelCopyWith<$Res>(_value.transferMoneyModel!,
+        (value) {
+      return _then(_value.copyWith(transferMoneyModel: value));
     });
   }
 }
@@ -488,14 +489,14 @@ class __$$_LoadedCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Loaded implements _Loaded {
-  const _$_Loaded({this.placesModelTM});
+  const _$_Loaded({this.transferMoneyModel});
 
   @override
-  final PlacesModelTM? placesModelTM;
+  final TransferMoneyModel? transferMoneyModel;
 
   @override
   String toString() {
-    return 'TransferMoneyState.loaded(placesModelTM: $placesModelTM)';
+    return 'TransferMoneyState.loaded(transferMoneyModel: $transferMoneyModel)';
   }
 
   @override
@@ -503,12 +504,12 @@ class _$_Loaded implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Loaded &&
-            (identical(other.placesModelTM, placesModelTM) ||
-                other.placesModelTM == placesModelTM));
+            (identical(other.transferMoneyModel, transferMoneyModel) ||
+                other.transferMoneyModel == transferMoneyModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, placesModelTM);
+  int get hashCode => Object.hash(runtimeType, transferMoneyModel);
 
   @JsonKey(ignore: true)
   @override
@@ -521,9 +522,9 @@ class _$_Loaded implements _Loaded {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(PlacesModelTM? placesModelTM) loaded,
+    required TResult Function(TransferMoneyModel? transferMoneyModel) loaded,
   }) {
-    return loaded(placesModelTM);
+    return loaded(transferMoneyModel);
   }
 
   @override
@@ -531,9 +532,9 @@ class _$_Loaded implements _Loaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult? Function(TransferMoneyModel? transferMoneyModel)? loaded,
   }) {
-    return loaded?.call(placesModelTM);
+    return loaded?.call(transferMoneyModel);
   }
 
   @override
@@ -541,11 +542,11 @@ class _$_Loaded implements _Loaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(PlacesModelTM? placesModelTM)? loaded,
+    TResult Function(TransferMoneyModel? transferMoneyModel)? loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(placesModelTM);
+      return loaded(transferMoneyModel);
     }
     return orElse();
   }
@@ -586,9 +587,10 @@ class _$_Loaded implements _Loaded {
 }
 
 abstract class _Loaded implements TransferMoneyState {
-  const factory _Loaded({final PlacesModelTM? placesModelTM}) = _$_Loaded;
+  const factory _Loaded({final TransferMoneyModel? transferMoneyModel}) =
+      _$_Loaded;
 
-  PlacesModelTM? get placesModelTM;
+  TransferMoneyModel? get transferMoneyModel;
   @JsonKey(ignore: true)
   _$$_LoadedCopyWith<_$_Loaded> get copyWith =>
       throw _privateConstructorUsedError;

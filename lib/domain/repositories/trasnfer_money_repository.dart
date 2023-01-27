@@ -1,14 +1,28 @@
-import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
+import 'dart:convert';
+import 'package:cost_app_dinamica/data/models/transfer_money_model/transfer_money_model.dart';
+import 'package:http/http.dart' as http;
 
 class TransferMoneyRepository {
-  Future<PlacesModelTM> getTransferMoney() async {
-    PlacesModelTM placesModelTM;
+  Future<TransferMoneyModel> getTransferMoney() async {
+    TransferMoneyModel transferMoneyModel;
 
     try {
-      //solicitud a api
+      //request to api
+      var url =
+          Uri.https('cost.dinamicaonline.com.ar', 'api/v1/transfer_money');
+      var response = await http.post(url, headers: {
+        "Access-Control-Allow-Origin": "*",
+        'Content-Type': 'application/json',
+        'Accept': '*/*'
+      });
 
-      //simulacion
-      placesModelTM = PlacesModelTM.fromJson({
+      Map data = jsonDecode(response.body);
+
+      transferMoneyModel =
+          TransferMoneyModel.fromJson(data as Map<String, dynamic>);
+
+      //Simulation (bad)
+      /* placesModelTM = PlacesModelTM.fromJson({
         "trdSc1Max": 500.00,
         "trdScMesMaxImpo": 100.00,
         "trdScMesMaxCant": 3,
@@ -19,9 +33,9 @@ class TransferMoneyRepository {
         "treScMesMaxCant": 3,
         "trePorcentaje": 21.000,
         "treCostoMinimo": 200.00
-      });
+      }); */
 
-      return placesModelTM;
+      return transferMoneyModel;
     } catch (e) {
       throw Exception(e.toString());
     }

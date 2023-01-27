@@ -1,5 +1,6 @@
 import 'package:cost_app_dinamica/constants/components.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class Cost extends StatefulWidget {
@@ -41,16 +42,19 @@ class CostState extends State<Cost> {
               : Positioned(
                   bottom: -1,
                   right: -1,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(2000)),
-                        gradient: LinearGradient(
-                            colors: [Colors.red[100]!, Colors.red[50]!],
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter)),
-                    width: MediaQuery.of(context).size.width,
-                    height: 300,
+                  child: ClipPath(
+                    clipper: WaveClipperTwo(flip: true, reverse: true),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(2000)),
+                          gradient: LinearGradient(
+                              colors: [Colors.red[100]!, Colors.red[50]!],
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter)),
+                      width: MediaQuery.of(context).size.width,
+                      height: 350,
+                    ),
                   ),
                 ),
           ResponsiveRowColumn(
@@ -75,7 +79,7 @@ class CostState extends State<Cost> {
                                 color: Colors.grey.shade700, fontSize: 25)),
                       ),
                       const SizedBox(height: 40),
-                      const Text("Disfrutá sin costos ocultos",
+                      const Text("Elegí lo que quieras sin costos ocultos",
                           style: TextStyle(
                               color: primary,
                               fontSize: 70,

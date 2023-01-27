@@ -19,7 +19,7 @@ class ValueColumn extends StatelessWidget {
         height: heigth,
         padding: const EdgeInsets.symmetric(vertical: 5),
         decoration: BoxDecoration(
-          color: primary,
+          color: Colors.red[300],
           //borderRadius: BorderRadius.circular(10),
           border: Border.all(color: Colors.white),
         ),

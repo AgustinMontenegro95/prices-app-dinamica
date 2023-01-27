@@ -9,29 +9,29 @@ part of 'transfer_money_model.dart';
 _$_TransferMoneyModel _$$_TransferMoneyModelFromJson(
         Map<String, dynamic> json) =>
     _$_TransferMoneyModel(
-      trdSc1Max: (json['trdSc1Max'] as num).toDouble(),
-      trdScMesMaxImpo: (json['trdScMesMaxImpo'] as num).toDouble(),
-      trdScMesMaxCant: json['trdScMesMaxCant'] as int,
-      trdPorcentaje: (json['trdPorcentaje'] as num).toDouble(),
-      trdCostoMinimo: (json['trdCostoMinimo'] as num).toDouble(),
-      treSc1Max: (json['treSc1Max'] as num).toDouble(),
-      treScMesMaxImpo: (json['treScMesMaxImpo'] as num).toDouble(),
-      treScMesMaxCant: json['treScMesMaxCant'] as int,
-      trePorcentaje: (json['trePorcentaje'] as num).toDouble(),
-      treCostoMinimo: (json['treCostoMinimo'] as num).toDouble(),
+      TRD_SC_1MAX: json['TRD_SC_1MAX'] as String,
+      TRD_SC_MES_MAX_IMPO: json['TRD_SC_MES_MAX_IMPO'] as String,
+      TRD_SC_MES_MAX_CANT: json['TRD_SC_MES_MAX_CANT'] as String,
+      TRD_PORCENTAJE: json['TRD_PORCENTAJE'] as String,
+      TRD_COSTO_MINIMO: json['TRD_COSTO_MINIMO'] as String,
+      TRE_SC_1MAX: json['TRE_SC_1MAX'] as String,
+      TRE_SC_MES_MAX_IMPO: json['TRE_SC_MES_MAX_IMPO'] as String,
+      TRE_SC_MES_MAX_CANT: json['TRE_SC_MES_MAX_CANT'] as String,
+      TRE_PORCENTAJE: json['TRE_PORCENTAJE'] as String,
+      TRE_COSTO_MINIMO: json['TRE_COSTO_MINIMO'] as String,
     );
 
 Map<String, dynamic> _$$_TransferMoneyModelToJson(
         _$_TransferMoneyModel instance) =>
     <String, dynamic>{
-      'trdSc1Max': instance.trdSc1Max,
-      'trdScMesMaxImpo': instance.trdScMesMaxImpo,
-      'trdScMesMaxCant': instance.trdScMesMaxCant,
-      'trdPorcentaje': instance.trdPorcentaje,
-      'trdCostoMinimo': instance.trdCostoMinimo,
-      'treSc1Max': instance.treSc1Max,
-      'treScMesMaxImpo': instance.treScMesMaxImpo,
-      'treScMesMaxCant': instance.treScMesMaxCant,
-      'trePorcentaje': instance.trePorcentaje,
-      'treCostoMinimo': instance.treCostoMinimo,
+      'TRD_SC_1MAX': instance.TRD_SC_1MAX,
+      'TRD_SC_MES_MAX_IMPO': instance.TRD_SC_MES_MAX_IMPO,
+      'TRD_SC_MES_MAX_CANT': instance.TRD_SC_MES_MAX_CANT,
+      'TRD_PORCENTAJE': instance.TRD_PORCENTAJE,
+      'TRD_COSTO_MINIMO': instance.TRD_COSTO_MINIMO,
+      'TRE_SC_1MAX': instance.TRE_SC_1MAX,
+      'TRE_SC_MES_MAX_IMPO': instance.TRE_SC_MES_MAX_IMPO,
+      'TRE_SC_MES_MAX_CANT': instance.TRE_SC_MES_MAX_CANT,
+      'TRE_PORCENTAJE': instance.TRE_PORCENTAJE,
+      'TRE_COSTO_MINIMO': instance.TRE_COSTO_MINIMO,
     };

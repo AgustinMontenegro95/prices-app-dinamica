@@ -3,6 +3,7 @@ import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/cost.dart';
 import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/title_column.dart';
 import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/value_column.dart';
 import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/zero_cost.dart';
+import 'package:cost_app_dinamica/ui/widgets/Loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -25,8 +26,8 @@ class _DepositMoneyPageState extends State<DepositMoneyPage> {
     return BlocBuilder<DepositMoneyBloc, DepositMoneyState>(
       builder: (context, state) {
         return state.maybeWhen(
-          initial: () => const CircularProgressIndicator(),
-          loading: () => const CircularProgressIndicator(),
+          initial: () => const Text("Initial"),
+          loading: () => const Loading(),
           loaded: (placesModelDM) {
             //definir heigth y weight
             double heightColumn = MediaQuery.of(context).size.height * 0.10;
@@ -152,7 +153,7 @@ class _DepositMoneyPageState extends State<DepositMoneyPage> {
               ),
             );
           },
-          orElse: () => const CircularProgressIndicator(),
+          orElse: () => const Loading(),
         );
       },
     );

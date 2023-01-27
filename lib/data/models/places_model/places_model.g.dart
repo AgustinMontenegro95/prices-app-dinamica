@@ -21,23 +21,11 @@ Map<String, dynamic> _$$_PlacesModelDMToJson(_$_PlacesModelDM instance) =>
 _$_PlacesModelCW _$$_PlacesModelCWFromJson(Map<String, dynamic> json) =>
     _$_PlacesModelCW(
       places: (json['places'] as List<dynamic>)
-          .map((e) => DepositMoneyModel.fromJson(e as Map<String, dynamic>))
+          .map((e) => CashWithdrawalModel.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$$_PlacesModelCWToJson(_$_PlacesModelCW instance) =>
-    <String, dynamic>{
-      'places': instance.places,
-    };
-
-_$_PlacesModelTM _$$_PlacesModelTMFromJson(Map<String, dynamic> json) =>
-    _$_PlacesModelTM(
-      places: (json['places'] as List<dynamic>)
-          .map((e) => DepositMoneyModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
-    );
-
-Map<String, dynamic> _$$_PlacesModelTMToJson(_$_PlacesModelTM instance) =>
     <String, dynamic>{
       'places': instance.places,
     };

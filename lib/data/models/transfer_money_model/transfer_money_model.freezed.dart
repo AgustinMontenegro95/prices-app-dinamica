@@ -20,16 +20,26 @@ TransferMoneyModel _$TransferMoneyModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$TransferMoneyModel {
-  double get trdSc1Max => throw _privateConstructorUsedError;
-  double get trdScMesMaxImpo => throw _privateConstructorUsedError;
-  int get trdScMesMaxCant => throw _privateConstructorUsedError;
-  double get trdPorcentaje => throw _privateConstructorUsedError;
-  double get trdCostoMinimo => throw _privateConstructorUsedError;
-  double get treSc1Max => throw _privateConstructorUsedError;
-  double get treScMesMaxImpo => throw _privateConstructorUsedError;
-  int get treScMesMaxCant => throw _privateConstructorUsedError;
-  double get trePorcentaje => throw _privateConstructorUsedError;
-  double get treCostoMinimo => throw _privateConstructorUsedError;
+/* required String trdSc1Max,
+    required String trdScMesMaxImpo,
+    required String trdScMesMaxCant,
+    required String trdPorcentaje,
+    required String trdCostoMinimo,
+    required String treSc1Max,
+    required String treScMesMaxImpo,
+    required String treScMesMaxCant,
+    required String trePorcentaje,
+    required String treCostoMinimo, */
+  String get TRD_SC_1MAX => throw _privateConstructorUsedError;
+  String get TRD_SC_MES_MAX_IMPO => throw _privateConstructorUsedError;
+  String get TRD_SC_MES_MAX_CANT => throw _privateConstructorUsedError;
+  String get TRD_PORCENTAJE => throw _privateConstructorUsedError;
+  String get TRD_COSTO_MINIMO => throw _privateConstructorUsedError;
+  String get TRE_SC_1MAX => throw _privateConstructorUsedError;
+  String get TRE_SC_MES_MAX_IMPO => throw _privateConstructorUsedError;
+  String get TRE_SC_MES_MAX_CANT => throw _privateConstructorUsedError;
+  String get TRE_PORCENTAJE => throw _privateConstructorUsedError;
+  String get TRE_COSTO_MINIMO => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -44,16 +54,16 @@ abstract class $TransferMoneyModelCopyWith<$Res> {
       _$TransferMoneyModelCopyWithImpl<$Res, TransferMoneyModel>;
   @useResult
   $Res call(
-      {double trdSc1Max,
-      double trdScMesMaxImpo,
-      int trdScMesMaxCant,
-      double trdPorcentaje,
-      double trdCostoMinimo,
-      double treSc1Max,
-      double treScMesMaxImpo,
-      int treScMesMaxCant,
-      double trePorcentaje,
-      double treCostoMinimo});
+      {String TRD_SC_1MAX,
+      String TRD_SC_MES_MAX_IMPO,
+      String TRD_SC_MES_MAX_CANT,
+      String TRD_PORCENTAJE,
+      String TRD_COSTO_MINIMO,
+      String TRE_SC_1MAX,
+      String TRE_SC_MES_MAX_IMPO,
+      String TRE_SC_MES_MAX_CANT,
+      String TRE_PORCENTAJE,
+      String TRE_COSTO_MINIMO});
 }
 
 /// @nodoc
@@ -69,58 +79,58 @@ class _$TransferMoneyModelCopyWithImpl<$Res, $Val extends TransferMoneyModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? trdSc1Max = null,
-    Object? trdScMesMaxImpo = null,
-    Object? trdScMesMaxCant = null,
-    Object? trdPorcentaje = null,
-    Object? trdCostoMinimo = null,
-    Object? treSc1Max = null,
-    Object? treScMesMaxImpo = null,
-    Object? treScMesMaxCant = null,
-    Object? trePorcentaje = null,
-    Object? treCostoMinimo = null,
+    Object? TRD_SC_1MAX = null,
+    Object? TRD_SC_MES_MAX_IMPO = null,
+    Object? TRD_SC_MES_MAX_CANT = null,
+    Object? TRD_PORCENTAJE = null,
+    Object? TRD_COSTO_MINIMO = null,
+    Object? TRE_SC_1MAX = null,
+    Object? TRE_SC_MES_MAX_IMPO = null,
+    Object? TRE_SC_MES_MAX_CANT = null,
+    Object? TRE_PORCENTAJE = null,
+    Object? TRE_COSTO_MINIMO = null,
   }) {
     return _then(_value.copyWith(
-      trdSc1Max: null == trdSc1Max
-          ? _value.trdSc1Max
-          : trdSc1Max // ignore: cast_nullable_to_non_nullable
-              as double,
-      trdScMesMaxImpo: null == trdScMesMaxImpo
-          ? _value.trdScMesMaxImpo
-          : trdScMesMaxImpo // ignore: cast_nullable_to_non_nullable
-              as double,
-      trdScMesMaxCant: null == trdScMesMaxCant
-          ? _value.trdScMesMaxCant
-          : trdScMesMaxCant // ignore: cast_nullable_to_non_nullable
-              as int,
-      trdPorcentaje: null == trdPorcentaje
-          ? _value.trdPorcentaje
-          : trdPorcentaje // ignore: cast_nullable_to_non_nullable
-              as double,
-      trdCostoMinimo: null == trdCostoMinimo
-          ? _value.trdCostoMinimo
-          : trdCostoMinimo // ignore: cast_nullable_to_non_nullable
-              as double,
-      treSc1Max: null == treSc1Max
-          ? _value.treSc1Max
-          : treSc1Max // ignore: cast_nullable_to_non_nullable
-              as double,
-      treScMesMaxImpo: null == treScMesMaxImpo
-          ? _value.treScMesMaxImpo
-          : treScMesMaxImpo // ignore: cast_nullable_to_non_nullable
-              as double,
-      treScMesMaxCant: null == treScMesMaxCant
-          ? _value.treScMesMaxCant
-          : treScMesMaxCant // ignore: cast_nullable_to_non_nullable
-              as int,
-      trePorcentaje: null == trePorcentaje
-          ? _value.trePorcentaje
-          : trePorcentaje // ignore: cast_nullable_to_non_nullable
-              as double,
-      treCostoMinimo: null == treCostoMinimo
-          ? _value.treCostoMinimo
-          : treCostoMinimo // ignore: cast_nullable_to_non_nullable
-              as double,
+      TRD_SC_1MAX: null == TRD_SC_1MAX
+          ? _value.TRD_SC_1MAX
+          : TRD_SC_1MAX // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_SC_MES_MAX_IMPO: null == TRD_SC_MES_MAX_IMPO
+          ? _value.TRD_SC_MES_MAX_IMPO
+          : TRD_SC_MES_MAX_IMPO // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_SC_MES_MAX_CANT: null == TRD_SC_MES_MAX_CANT
+          ? _value.TRD_SC_MES_MAX_CANT
+          : TRD_SC_MES_MAX_CANT // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_PORCENTAJE: null == TRD_PORCENTAJE
+          ? _value.TRD_PORCENTAJE
+          : TRD_PORCENTAJE // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_COSTO_MINIMO: null == TRD_COSTO_MINIMO
+          ? _value.TRD_COSTO_MINIMO
+          : TRD_COSTO_MINIMO // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_SC_1MAX: null == TRE_SC_1MAX
+          ? _value.TRE_SC_1MAX
+          : TRE_SC_1MAX // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_SC_MES_MAX_IMPO: null == TRE_SC_MES_MAX_IMPO
+          ? _value.TRE_SC_MES_MAX_IMPO
+          : TRE_SC_MES_MAX_IMPO // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_SC_MES_MAX_CANT: null == TRE_SC_MES_MAX_CANT
+          ? _value.TRE_SC_MES_MAX_CANT
+          : TRE_SC_MES_MAX_CANT // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_PORCENTAJE: null == TRE_PORCENTAJE
+          ? _value.TRE_PORCENTAJE
+          : TRE_PORCENTAJE // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_COSTO_MINIMO: null == TRE_COSTO_MINIMO
+          ? _value.TRE_COSTO_MINIMO
+          : TRE_COSTO_MINIMO // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -134,16 +144,16 @@ abstract class _$$_TransferMoneyModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {double trdSc1Max,
-      double trdScMesMaxImpo,
-      int trdScMesMaxCant,
-      double trdPorcentaje,
-      double trdCostoMinimo,
-      double treSc1Max,
-      double treScMesMaxImpo,
-      int treScMesMaxCant,
-      double trePorcentaje,
-      double treCostoMinimo});
+      {String TRD_SC_1MAX,
+      String TRD_SC_MES_MAX_IMPO,
+      String TRD_SC_MES_MAX_CANT,
+      String TRD_PORCENTAJE,
+      String TRD_COSTO_MINIMO,
+      String TRE_SC_1MAX,
+      String TRE_SC_MES_MAX_IMPO,
+      String TRE_SC_MES_MAX_CANT,
+      String TRE_PORCENTAJE,
+      String TRE_COSTO_MINIMO});
 }
 
 /// @nodoc
@@ -157,58 +167,58 @@ class __$$_TransferMoneyModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? trdSc1Max = null,
-    Object? trdScMesMaxImpo = null,
-    Object? trdScMesMaxCant = null,
-    Object? trdPorcentaje = null,
-    Object? trdCostoMinimo = null,
-    Object? treSc1Max = null,
-    Object? treScMesMaxImpo = null,
-    Object? treScMesMaxCant = null,
-    Object? trePorcentaje = null,
-    Object? treCostoMinimo = null,
+    Object? TRD_SC_1MAX = null,
+    Object? TRD_SC_MES_MAX_IMPO = null,
+    Object? TRD_SC_MES_MAX_CANT = null,
+    Object? TRD_PORCENTAJE = null,
+    Object? TRD_COSTO_MINIMO = null,
+    Object? TRE_SC_1MAX = null,
+    Object? TRE_SC_MES_MAX_IMPO = null,
+    Object? TRE_SC_MES_MAX_CANT = null,
+    Object? TRE_PORCENTAJE = null,
+    Object? TRE_COSTO_MINIMO = null,
   }) {
     return _then(_$_TransferMoneyModel(
-      trdSc1Max: null == trdSc1Max
-          ? _value.trdSc1Max
-          : trdSc1Max // ignore: cast_nullable_to_non_nullable
-              as double,
-      trdScMesMaxImpo: null == trdScMesMaxImpo
-          ? _value.trdScMesMaxImpo
-          : trdScMesMaxImpo // ignore: cast_nullable_to_non_nullable
-              as double,
-      trdScMesMaxCant: null == trdScMesMaxCant
-          ? _value.trdScMesMaxCant
-          : trdScMesMaxCant // ignore: cast_nullable_to_non_nullable
-              as int,
-      trdPorcentaje: null == trdPorcentaje
-          ? _value.trdPorcentaje
-          : trdPorcentaje // ignore: cast_nullable_to_non_nullable
-              as double,
-      trdCostoMinimo: null == trdCostoMinimo
-          ? _value.trdCostoMinimo
-          : trdCostoMinimo // ignore: cast_nullable_to_non_nullable
-              as double,
-      treSc1Max: null == treSc1Max
-          ? _value.treSc1Max
-          : treSc1Max // ignore: cast_nullable_to_non_nullable
-              as double,
-      treScMesMaxImpo: null == treScMesMaxImpo
-          ? _value.treScMesMaxImpo
-          : treScMesMaxImpo // ignore: cast_nullable_to_non_nullable
-              as double,
-      treScMesMaxCant: null == treScMesMaxCant
-          ? _value.treScMesMaxCant
-          : treScMesMaxCant // ignore: cast_nullable_to_non_nullable
-              as int,
-      trePorcentaje: null == trePorcentaje
-          ? _value.trePorcentaje
-          : trePorcentaje // ignore: cast_nullable_to_non_nullable
-              as double,
-      treCostoMinimo: null == treCostoMinimo
-          ? _value.treCostoMinimo
-          : treCostoMinimo // ignore: cast_nullable_to_non_nullable
-              as double,
+      TRD_SC_1MAX: null == TRD_SC_1MAX
+          ? _value.TRD_SC_1MAX
+          : TRD_SC_1MAX // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_SC_MES_MAX_IMPO: null == TRD_SC_MES_MAX_IMPO
+          ? _value.TRD_SC_MES_MAX_IMPO
+          : TRD_SC_MES_MAX_IMPO // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_SC_MES_MAX_CANT: null == TRD_SC_MES_MAX_CANT
+          ? _value.TRD_SC_MES_MAX_CANT
+          : TRD_SC_MES_MAX_CANT // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_PORCENTAJE: null == TRD_PORCENTAJE
+          ? _value.TRD_PORCENTAJE
+          : TRD_PORCENTAJE // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRD_COSTO_MINIMO: null == TRD_COSTO_MINIMO
+          ? _value.TRD_COSTO_MINIMO
+          : TRD_COSTO_MINIMO // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_SC_1MAX: null == TRE_SC_1MAX
+          ? _value.TRE_SC_1MAX
+          : TRE_SC_1MAX // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_SC_MES_MAX_IMPO: null == TRE_SC_MES_MAX_IMPO
+          ? _value.TRE_SC_MES_MAX_IMPO
+          : TRE_SC_MES_MAX_IMPO // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_SC_MES_MAX_CANT: null == TRE_SC_MES_MAX_CANT
+          ? _value.TRE_SC_MES_MAX_CANT
+          : TRE_SC_MES_MAX_CANT // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_PORCENTAJE: null == TRE_PORCENTAJE
+          ? _value.TRE_PORCENTAJE
+          : TRE_PORCENTAJE // ignore: cast_nullable_to_non_nullable
+              as String,
+      TRE_COSTO_MINIMO: null == TRE_COSTO_MINIMO
+          ? _value.TRE_COSTO_MINIMO
+          : TRE_COSTO_MINIMO // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -217,44 +227,54 @@ class __$$_TransferMoneyModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_TransferMoneyModel implements _TransferMoneyModel {
   const _$_TransferMoneyModel(
-      {required this.trdSc1Max,
-      required this.trdScMesMaxImpo,
-      required this.trdScMesMaxCant,
-      required this.trdPorcentaje,
-      required this.trdCostoMinimo,
-      required this.treSc1Max,
-      required this.treScMesMaxImpo,
-      required this.treScMesMaxCant,
-      required this.trePorcentaje,
-      required this.treCostoMinimo});
+      {required this.TRD_SC_1MAX,
+      required this.TRD_SC_MES_MAX_IMPO,
+      required this.TRD_SC_MES_MAX_CANT,
+      required this.TRD_PORCENTAJE,
+      required this.TRD_COSTO_MINIMO,
+      required this.TRE_SC_1MAX,
+      required this.TRE_SC_MES_MAX_IMPO,
+      required this.TRE_SC_MES_MAX_CANT,
+      required this.TRE_PORCENTAJE,
+      required this.TRE_COSTO_MINIMO});
 
   factory _$_TransferMoneyModel.fromJson(Map<String, dynamic> json) =>
       _$$_TransferMoneyModelFromJson(json);
 
+/* required String trdSc1Max,
+    required String trdScMesMaxImpo,
+    required String trdScMesMaxCant,
+    required String trdPorcentaje,
+    required String trdCostoMinimo,
+    required String treSc1Max,
+    required String treScMesMaxImpo,
+    required String treScMesMaxCant,
+    required String trePorcentaje,
+    required String treCostoMinimo, */
   @override
-  final double trdSc1Max;
+  final String TRD_SC_1MAX;
   @override
-  final double trdScMesMaxImpo;
+  final String TRD_SC_MES_MAX_IMPO;
   @override
-  final int trdScMesMaxCant;
+  final String TRD_SC_MES_MAX_CANT;
   @override
-  final double trdPorcentaje;
+  final String TRD_PORCENTAJE;
   @override
-  final double trdCostoMinimo;
+  final String TRD_COSTO_MINIMO;
   @override
-  final double treSc1Max;
+  final String TRE_SC_1MAX;
   @override
-  final double treScMesMaxImpo;
+  final String TRE_SC_MES_MAX_IMPO;
   @override
-  final int treScMesMaxCant;
+  final String TRE_SC_MES_MAX_CANT;
   @override
-  final double trePorcentaje;
+  final String TRE_PORCENTAJE;
   @override
-  final double treCostoMinimo;
+  final String TRE_COSTO_MINIMO;
 
   @override
   String toString() {
-    return 'TransferMoneyModel(trdSc1Max: $trdSc1Max, trdScMesMaxImpo: $trdScMesMaxImpo, trdScMesMaxCant: $trdScMesMaxCant, trdPorcentaje: $trdPorcentaje, trdCostoMinimo: $trdCostoMinimo, treSc1Max: $treSc1Max, treScMesMaxImpo: $treScMesMaxImpo, treScMesMaxCant: $treScMesMaxCant, trePorcentaje: $trePorcentaje, treCostoMinimo: $treCostoMinimo)';
+    return 'TransferMoneyModel(TRD_SC_1MAX: $TRD_SC_1MAX, TRD_SC_MES_MAX_IMPO: $TRD_SC_MES_MAX_IMPO, TRD_SC_MES_MAX_CANT: $TRD_SC_MES_MAX_CANT, TRD_PORCENTAJE: $TRD_PORCENTAJE, TRD_COSTO_MINIMO: $TRD_COSTO_MINIMO, TRE_SC_1MAX: $TRE_SC_1MAX, TRE_SC_MES_MAX_IMPO: $TRE_SC_MES_MAX_IMPO, TRE_SC_MES_MAX_CANT: $TRE_SC_MES_MAX_CANT, TRE_PORCENTAJE: $TRE_PORCENTAJE, TRE_COSTO_MINIMO: $TRE_COSTO_MINIMO)';
   }
 
   @override
@@ -262,42 +282,42 @@ class _$_TransferMoneyModel implements _TransferMoneyModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_TransferMoneyModel &&
-            (identical(other.trdSc1Max, trdSc1Max) ||
-                other.trdSc1Max == trdSc1Max) &&
-            (identical(other.trdScMesMaxImpo, trdScMesMaxImpo) ||
-                other.trdScMesMaxImpo == trdScMesMaxImpo) &&
-            (identical(other.trdScMesMaxCant, trdScMesMaxCant) ||
-                other.trdScMesMaxCant == trdScMesMaxCant) &&
-            (identical(other.trdPorcentaje, trdPorcentaje) ||
-                other.trdPorcentaje == trdPorcentaje) &&
-            (identical(other.trdCostoMinimo, trdCostoMinimo) ||
-                other.trdCostoMinimo == trdCostoMinimo) &&
-            (identical(other.treSc1Max, treSc1Max) ||
-                other.treSc1Max == treSc1Max) &&
-            (identical(other.treScMesMaxImpo, treScMesMaxImpo) ||
-                other.treScMesMaxImpo == treScMesMaxImpo) &&
-            (identical(other.treScMesMaxCant, treScMesMaxCant) ||
-                other.treScMesMaxCant == treScMesMaxCant) &&
-            (identical(other.trePorcentaje, trePorcentaje) ||
-                other.trePorcentaje == trePorcentaje) &&
-            (identical(other.treCostoMinimo, treCostoMinimo) ||
-                other.treCostoMinimo == treCostoMinimo));
+            (identical(other.TRD_SC_1MAX, TRD_SC_1MAX) ||
+                other.TRD_SC_1MAX == TRD_SC_1MAX) &&
+            (identical(other.TRD_SC_MES_MAX_IMPO, TRD_SC_MES_MAX_IMPO) ||
+                other.TRD_SC_MES_MAX_IMPO == TRD_SC_MES_MAX_IMPO) &&
+            (identical(other.TRD_SC_MES_MAX_CANT, TRD_SC_MES_MAX_CANT) ||
+                other.TRD_SC_MES_MAX_CANT == TRD_SC_MES_MAX_CANT) &&
+            (identical(other.TRD_PORCENTAJE, TRD_PORCENTAJE) ||
+                other.TRD_PORCENTAJE == TRD_PORCENTAJE) &&
+            (identical(other.TRD_COSTO_MINIMO, TRD_COSTO_MINIMO) ||
+                other.TRD_COSTO_MINIMO == TRD_COSTO_MINIMO) &&
+            (identical(other.TRE_SC_1MAX, TRE_SC_1MAX) ||
+                other.TRE_SC_1MAX == TRE_SC_1MAX) &&
+            (identical(other.TRE_SC_MES_MAX_IMPO, TRE_SC_MES_MAX_IMPO) ||
+                other.TRE_SC_MES_MAX_IMPO == TRE_SC_MES_MAX_IMPO) &&
+            (identical(other.TRE_SC_MES_MAX_CANT, TRE_SC_MES_MAX_CANT) ||
+                other.TRE_SC_MES_MAX_CANT == TRE_SC_MES_MAX_CANT) &&
+            (identical(other.TRE_PORCENTAJE, TRE_PORCENTAJE) ||
+                other.TRE_PORCENTAJE == TRE_PORCENTAJE) &&
+            (identical(other.TRE_COSTO_MINIMO, TRE_COSTO_MINIMO) ||
+                other.TRE_COSTO_MINIMO == TRE_COSTO_MINIMO));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      trdSc1Max,
-      trdScMesMaxImpo,
-      trdScMesMaxCant,
-      trdPorcentaje,
-      trdCostoMinimo,
-      treSc1Max,
-      treScMesMaxImpo,
-      treScMesMaxCant,
-      trePorcentaje,
-      treCostoMinimo);
+      TRD_SC_1MAX,
+      TRD_SC_MES_MAX_IMPO,
+      TRD_SC_MES_MAX_CANT,
+      TRD_PORCENTAJE,
+      TRD_COSTO_MINIMO,
+      TRE_SC_1MAX,
+      TRE_SC_MES_MAX_IMPO,
+      TRE_SC_MES_MAX_CANT,
+      TRE_PORCENTAJE,
+      TRE_COSTO_MINIMO);
 
   @JsonKey(ignore: true)
   @override
@@ -316,40 +336,49 @@ class _$_TransferMoneyModel implements _TransferMoneyModel {
 
 abstract class _TransferMoneyModel implements TransferMoneyModel {
   const factory _TransferMoneyModel(
-      {required final double trdSc1Max,
-      required final double trdScMesMaxImpo,
-      required final int trdScMesMaxCant,
-      required final double trdPorcentaje,
-      required final double trdCostoMinimo,
-      required final double treSc1Max,
-      required final double treScMesMaxImpo,
-      required final int treScMesMaxCant,
-      required final double trePorcentaje,
-      required final double treCostoMinimo}) = _$_TransferMoneyModel;
+      {required final String TRD_SC_1MAX,
+      required final String TRD_SC_MES_MAX_IMPO,
+      required final String TRD_SC_MES_MAX_CANT,
+      required final String TRD_PORCENTAJE,
+      required final String TRD_COSTO_MINIMO,
+      required final String TRE_SC_1MAX,
+      required final String TRE_SC_MES_MAX_IMPO,
+      required final String TRE_SC_MES_MAX_CANT,
+      required final String TRE_PORCENTAJE,
+      required final String TRE_COSTO_MINIMO}) = _$_TransferMoneyModel;
 
   factory _TransferMoneyModel.fromJson(Map<String, dynamic> json) =
       _$_TransferMoneyModel.fromJson;
 
+  @override /* required String trdSc1Max,
+    required String trdScMesMaxImpo,
+    required String trdScMesMaxCant,
+    required String trdPorcentaje,
+    required String trdCostoMinimo,
+    required String treSc1Max,
+    required String treScMesMaxImpo,
+    required String treScMesMaxCant,
+    required String trePorcentaje,
+    required String treCostoMinimo, */
+  String get TRD_SC_1MAX;
   @override
-  double get trdSc1Max;
+  String get TRD_SC_MES_MAX_IMPO;
   @override
-  double get trdScMesMaxImpo;
+  String get TRD_SC_MES_MAX_CANT;
   @override
-  int get trdScMesMaxCant;
+  String get TRD_PORCENTAJE;
   @override
-  double get trdPorcentaje;
+  String get TRD_COSTO_MINIMO;
   @override
-  double get trdCostoMinimo;
+  String get TRE_SC_1MAX;
   @override
-  double get treSc1Max;
+  String get TRE_SC_MES_MAX_IMPO;
   @override
-  double get treScMesMaxImpo;
+  String get TRE_SC_MES_MAX_CANT;
   @override
-  int get treScMesMaxCant;
+  String get TRE_PORCENTAJE;
   @override
-  double get trePorcentaje;
-  @override
-  double get treCostoMinimo;
+  String get TRE_COSTO_MINIMO;
   @override
   @JsonKey(ignore: true)
   _$$_TransferMoneyModelCopyWith<_$_TransferMoneyModel> get copyWith =>

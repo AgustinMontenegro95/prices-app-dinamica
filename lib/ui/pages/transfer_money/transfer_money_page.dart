@@ -1,4 +1,5 @@
 import 'package:cost_app_dinamica/domain/blocs/transfer_money/transfer_money_bloc.dart';
+import 'package:cost_app_dinamica/ui/widgets/Loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -22,16 +23,29 @@ class _TransferMoneyPageState extends State<TransferMoneyPage> {
       builder: (context, state) {
         return state.maybeWhen(
           initial: () => const Text("initial"),
-          loading: () => const Text("loading"),
-          loaded: (placesModelTM) {
+          loading: () => const Loading(),
+          loaded: (transferMoneyModel) {
             return Scaffold(
               appBar: AppBar(
                 title: const Text("Transferencia de dinero"),
               ),
-              //body: Text(placesModelTM!.trdPorcentaje.toString()),
+              body: Column(
+                children: [
+                  Text(transferMoneyModel!.TRD_COSTO_MINIMO.toString()),
+                  Text(transferMoneyModel.TRD_PORCENTAJE.toString()),
+                  Text(transferMoneyModel.TRD_SC_1MAX.toString()),
+                  Text(transferMoneyModel.TRD_SC_MES_MAX_CANT.toString()),
+                  Text(transferMoneyModel.TRD_SC_MES_MAX_IMPO.toString()),
+                  Text(transferMoneyModel.TRE_COSTO_MINIMO.toString()),
+                  Text(transferMoneyModel.TRE_PORCENTAJE.toString()),
+                  Text(transferMoneyModel.TRE_SC_1MAX.toString()),
+                  Text(transferMoneyModel.TRE_SC_MES_MAX_CANT.toString()),
+                  Text(transferMoneyModel.TRE_SC_MES_MAX_IMPO.toString()),
+                ],
+              ),
             );
           },
-          orElse: () => const CircularProgressIndicator(),
+          orElse: () => const Loading(),
         );
       },
     );

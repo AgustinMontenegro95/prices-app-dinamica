@@ -164,7 +164,7 @@ PlacesModelCW _$PlacesModelCWFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$PlacesModelCW {
-  List<DepositMoneyModel> get places => throw _privateConstructorUsedError;
+  List<CashWithdrawalModel> get places => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -178,7 +178,7 @@ abstract class $PlacesModelCWCopyWith<$Res> {
           PlacesModelCW value, $Res Function(PlacesModelCW) then) =
       _$PlacesModelCWCopyWithImpl<$Res, PlacesModelCW>;
   @useResult
-  $Res call({List<DepositMoneyModel> places});
+  $Res call({List<CashWithdrawalModel> places});
 }
 
 /// @nodoc
@@ -200,7 +200,7 @@ class _$PlacesModelCWCopyWithImpl<$Res, $Val extends PlacesModelCW>
       places: null == places
           ? _value.places
           : places // ignore: cast_nullable_to_non_nullable
-              as List<DepositMoneyModel>,
+              as List<CashWithdrawalModel>,
     ) as $Val);
   }
 }
@@ -213,7 +213,7 @@ abstract class _$$_PlacesModelCWCopyWith<$Res>
       __$$_PlacesModelCWCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({List<DepositMoneyModel> places});
+  $Res call({List<CashWithdrawalModel> places});
 }
 
 /// @nodoc
@@ -233,7 +233,7 @@ class __$$_PlacesModelCWCopyWithImpl<$Res>
       places: null == places
           ? _value._places
           : places // ignore: cast_nullable_to_non_nullable
-              as List<DepositMoneyModel>,
+              as List<CashWithdrawalModel>,
     ));
   }
 }
@@ -241,15 +241,15 @@ class __$$_PlacesModelCWCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_PlacesModelCW implements _PlacesModelCW {
-  const _$_PlacesModelCW({required final List<DepositMoneyModel> places})
+  const _$_PlacesModelCW({required final List<CashWithdrawalModel> places})
       : _places = places;
 
   factory _$_PlacesModelCW.fromJson(Map<String, dynamic> json) =>
       _$$_PlacesModelCWFromJson(json);
 
-  final List<DepositMoneyModel> _places;
+  final List<CashWithdrawalModel> _places;
   @override
-  List<DepositMoneyModel> get places {
+  List<CashWithdrawalModel> get places {
     if (_places is EqualUnmodifiableListView) return _places;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_places);
@@ -289,159 +289,15 @@ class _$_PlacesModelCW implements _PlacesModelCW {
 
 abstract class _PlacesModelCW implements PlacesModelCW {
   const factory _PlacesModelCW(
-      {required final List<DepositMoneyModel> places}) = _$_PlacesModelCW;
+      {required final List<CashWithdrawalModel> places}) = _$_PlacesModelCW;
 
   factory _PlacesModelCW.fromJson(Map<String, dynamic> json) =
       _$_PlacesModelCW.fromJson;
 
   @override
-  List<DepositMoneyModel> get places;
+  List<CashWithdrawalModel> get places;
   @override
   @JsonKey(ignore: true)
   _$$_PlacesModelCWCopyWith<_$_PlacesModelCW> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-PlacesModelTM _$PlacesModelTMFromJson(Map<String, dynamic> json) {
-  return _PlacesModelTM.fromJson(json);
-}
-
-/// @nodoc
-mixin _$PlacesModelTM {
-  List<DepositMoneyModel> get places => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $PlacesModelTMCopyWith<PlacesModelTM> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $PlacesModelTMCopyWith<$Res> {
-  factory $PlacesModelTMCopyWith(
-          PlacesModelTM value, $Res Function(PlacesModelTM) then) =
-      _$PlacesModelTMCopyWithImpl<$Res, PlacesModelTM>;
-  @useResult
-  $Res call({List<DepositMoneyModel> places});
-}
-
-/// @nodoc
-class _$PlacesModelTMCopyWithImpl<$Res, $Val extends PlacesModelTM>
-    implements $PlacesModelTMCopyWith<$Res> {
-  _$PlacesModelTMCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? places = null,
-  }) {
-    return _then(_value.copyWith(
-      places: null == places
-          ? _value.places
-          : places // ignore: cast_nullable_to_non_nullable
-              as List<DepositMoneyModel>,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_PlacesModelTMCopyWith<$Res>
-    implements $PlacesModelTMCopyWith<$Res> {
-  factory _$$_PlacesModelTMCopyWith(
-          _$_PlacesModelTM value, $Res Function(_$_PlacesModelTM) then) =
-      __$$_PlacesModelTMCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({List<DepositMoneyModel> places});
-}
-
-/// @nodoc
-class __$$_PlacesModelTMCopyWithImpl<$Res>
-    extends _$PlacesModelTMCopyWithImpl<$Res, _$_PlacesModelTM>
-    implements _$$_PlacesModelTMCopyWith<$Res> {
-  __$$_PlacesModelTMCopyWithImpl(
-      _$_PlacesModelTM _value, $Res Function(_$_PlacesModelTM) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? places = null,
-  }) {
-    return _then(_$_PlacesModelTM(
-      places: null == places
-          ? _value._places
-          : places // ignore: cast_nullable_to_non_nullable
-              as List<DepositMoneyModel>,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_PlacesModelTM implements _PlacesModelTM {
-  const _$_PlacesModelTM({required final List<DepositMoneyModel> places})
-      : _places = places;
-
-  factory _$_PlacesModelTM.fromJson(Map<String, dynamic> json) =>
-      _$$_PlacesModelTMFromJson(json);
-
-  final List<DepositMoneyModel> _places;
-  @override
-  List<DepositMoneyModel> get places {
-    if (_places is EqualUnmodifiableListView) return _places;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_places);
-  }
-
-  @override
-  String toString() {
-    return 'PlacesModelTM(places: $places)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_PlacesModelTM &&
-            const DeepCollectionEquality().equals(other._places, _places));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_places));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_PlacesModelTMCopyWith<_$_PlacesModelTM> get copyWith =>
-      __$$_PlacesModelTMCopyWithImpl<_$_PlacesModelTM>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_PlacesModelTMToJson(
-      this,
-    );
-  }
-}
-
-abstract class _PlacesModelTM implements PlacesModelTM {
-  const factory _PlacesModelTM(
-      {required final List<DepositMoneyModel> places}) = _$_PlacesModelTM;
-
-  factory _PlacesModelTM.fromJson(Map<String, dynamic> json) =
-      _$_PlacesModelTM.fromJson;
-
-  @override
-  List<DepositMoneyModel> get places;
-  @override
-  @JsonKey(ignore: true)
-  _$$_PlacesModelTMCopyWith<_$_PlacesModelTM> get copyWith =>
       throw _privateConstructorUsedError;
 }

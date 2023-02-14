@@ -30,7 +30,7 @@ class _DepositMoneyPageState extends State<DepositMoneyPage> {
           loading: () => const Loading(),
           loaded: (placesModelDM) {
             //definir heigth y weight
-            double heightColumn = MediaQuery.of(context).size.height * 0.10;
+            double heightColumn = MediaQuery.of(context).size.height * 0.11;
             double widthTitleColumn = MediaQuery.of(context).size.width * 0.2;
             double widthValueColumn = MediaQuery.of(context).size.width * 0.1;
             return Scaffold(

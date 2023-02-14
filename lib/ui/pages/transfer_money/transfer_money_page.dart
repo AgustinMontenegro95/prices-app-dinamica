@@ -29,19 +29,155 @@ class _TransferMoneyPageState extends State<TransferMoneyPage> {
               appBar: AppBar(
                 title: const Text("Transferencia de dinero"),
               ),
-              body: Column(
-                children: [
-                  Text(transferMoneyModel!.TRD_COSTO_MINIMO.toString()),
-                  Text(transferMoneyModel.TRD_PORCENTAJE.toString()),
-                  Text(transferMoneyModel.TRD_SC_1MAX.toString()),
-                  Text(transferMoneyModel.TRD_SC_MES_MAX_CANT.toString()),
-                  Text(transferMoneyModel.TRD_SC_MES_MAX_IMPO.toString()),
-                  Text(transferMoneyModel.TRE_COSTO_MINIMO.toString()),
-                  Text(transferMoneyModel.TRE_PORCENTAJE.toString()),
-                  Text(transferMoneyModel.TRE_SC_1MAX.toString()),
-                  Text(transferMoneyModel.TRE_SC_MES_MAX_CANT.toString()),
-                  Text(transferMoneyModel.TRE_SC_MES_MAX_IMPO.toString()),
-                ],
+              body: SingleChildScrollView(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: [
+                        const SizedBox(height: 50),
+                        const Text(
+                          "Transferencia DINÁMICA",
+                          style: TextStyle(
+                              color: Colors.red, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                                "Transf.Dinamica Costo Unitario minimo por operacion"),
+                            const SizedBox(width: 50),
+                            Text(transferMoneyModel!.TRD_COSTO_MINIMO
+                                .toString()),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          color: Colors.red.shade200,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                  "Transf.Dinamica Porcentaje a aplicar sobre los excedentes al maximo"),
+                              const SizedBox(width: 50),
+                              Text(
+                                  transferMoneyModel.TRD_PORCENTAJE.toString()),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                                "Transf.Dinamica Monto maximo a transferir en una sola operacion sin costo"),
+                            const SizedBox(width: 50),
+                            Text(transferMoneyModel.TRD_SC_1MAX.toString()),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          color: Colors.red.shade200,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                  "Transf.Dinamica Cantidad de transferencias mensuales sin costo"),
+                              const SizedBox(width: 50),
+                              Text(transferMoneyModel.TRD_SC_MES_MAX_CANT
+                                  .toString()),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                                "Transf.Dinamica Monto maximo a transferir en operaciones mensuales sin costo"),
+                            const SizedBox(width: 50),
+                            Text(transferMoneyModel.TRD_SC_MES_MAX_IMPO
+                                .toString()),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 50),
+                    Column(
+                      children: [
+                        const SizedBox(height: 50),
+                        const Text(
+                          "Transferencia externa",
+                          style: TextStyle(
+                              color: Colors.red, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          color: Colors.red.shade200,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                  "Transf.Externa Costo Unitario minimo por operacion"),
+                              const SizedBox(width: 50),
+                              Text(transferMoneyModel.TRE_COSTO_MINIMO
+                                  .toString()),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                                "Transf.Externa Porcentaje a aplicar sobre los excedentes al maximo"),
+                            const SizedBox(width: 50),
+                            Text(transferMoneyModel.TRE_PORCENTAJE.toString()),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          color: Colors.red.shade200,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                  "Transf.Externa Monto maximo a transferir en una sola operacion sin costo"),
+                              const SizedBox(width: 50),
+                              Text(transferMoneyModel.TRE_SC_1MAX.toString()),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                                "Transf.Externa Cantidad de transferencias mensuales sin costo"),
+                            const SizedBox(width: 50),
+                            Text(transferMoneyModel.TRE_SC_MES_MAX_CANT
+                                .toString()),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          color: Colors.red.shade200,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                  "Transf.Externa Monto maximo a transferir en operaciones mensuales sin costo"),
+                              const SizedBox(width: 50),
+                              Text(transferMoneyModel.TRE_SC_MES_MAX_IMPO
+                                  .toString()),
+                            ],
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             );
           },

@@ -1,11 +1,11 @@
 {
-    "name": "cost_app_dinamica",
-    "short_name": "cost_app_dinamica",
+    "name": "Costos - DINÁMICA",
+    "short_name": "Costos - DINÁMICA",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Prices of Dinamica Wallet.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

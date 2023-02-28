@@ -448,8 +448,6 @@ abstract class _$$_LoadedCopyWith<$Res> {
       __$$_LoadedCopyWithImpl<$Res>;
   @useResult
   $Res call({TransferMoneyModel? transferMoneyModel});
-
-  $TransferMoneyModelCopyWith<$Res>? get transferMoneyModel;
 }
 
 /// @nodoc
@@ -471,19 +469,6 @@ class __$$_LoadedCopyWithImpl<$Res>
               as TransferMoneyModel?,
     ));
   }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $TransferMoneyModelCopyWith<$Res>? get transferMoneyModel {
-    if (_value.transferMoneyModel == null) {
-      return null;
-    }
-
-    return $TransferMoneyModelCopyWith<$Res>(_value.transferMoneyModel!,
-        (value) {
-      return _then(_value.copyWith(transferMoneyModel: value));
-    });
-  }
 }
 
 /// @nodoc
@@ -504,12 +489,13 @@ class _$_Loaded implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Loaded &&
-            (identical(other.transferMoneyModel, transferMoneyModel) ||
-                other.transferMoneyModel == transferMoneyModel));
+            const DeepCollectionEquality()
+                .equals(other.transferMoneyModel, transferMoneyModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, transferMoneyModel);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(transferMoneyModel));
 
   @JsonKey(ignore: true)
   @override

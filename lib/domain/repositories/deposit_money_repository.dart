@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:cost_app_dinamica/data/models/places_model/places_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:prices_dinamica/data/models/places_model/places_model.dart';
 
 class DepositMoneyRepository {
   Future<PlacesModelDM> getDepositMoney() async {

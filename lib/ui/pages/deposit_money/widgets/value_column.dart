@@ -1,4 +1,3 @@
-import 'package:cost_app_dinamica/constants/components.dart';
 import 'package:flutter/material.dart';
 
 class ValueColumn extends StatelessWidget {

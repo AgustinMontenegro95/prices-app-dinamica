@@ -1,4 +1,4 @@
-package com.example.cost_app_dinamica
+package ar.com.dinamicaonline.prices
 
 import io.flutter.embedding.android.FlutterActivity
 

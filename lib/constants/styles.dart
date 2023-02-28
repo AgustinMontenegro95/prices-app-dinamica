@@ -1,5 +1,5 @@
-import 'package:cost_app_dinamica/constants/components.dart';
 import 'package:flutter/material.dart';
+import 'package:prices_dinamica/constants/components.dart';
 
 final buttonStylePro = ButtonStyle(
   backgroundColor: MaterialStateProperty.all<Color>(primary),

@@ -1,6 +1,6 @@
-import 'package:cost_app_dinamica/constants/components.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:prices_dinamica/constants/components.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class Cost extends StatefulWidget {

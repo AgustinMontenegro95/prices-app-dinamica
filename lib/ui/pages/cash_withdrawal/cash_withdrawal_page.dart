@@ -1,9 +1,7 @@
-import 'dart:js_util';
-
-import 'package:cost_app_dinamica/domain/blocs/cash_withdrawal/cash_withdrawal_bloc.dart';
-import 'package:cost_app_dinamica/ui/widgets/Loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:prices_dinamica/domain/blocs/cash_withdrawal/cash_withdrawal_bloc.dart';
+import 'package:prices_dinamica/ui/widgets/loading.dart';
 
 class CashWithdrawalPage extends StatefulWidget {
   const CashWithdrawalPage({super.key});

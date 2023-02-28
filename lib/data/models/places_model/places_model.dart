@@ -1,6 +1,6 @@
-import 'package:cost_app_dinamica/data/models/cash_withdrawal_model/cash_withdrawal_model.dart';
-import 'package:cost_app_dinamica/data/models/deposit_money_model/deposit_money_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:prices_dinamica/data/models/cash_withdrawal_model/cash_withdrawal_model.dart';
+import 'package:prices_dinamica/data/models/deposit_money_model/deposit_money_model.dart';
 
 part 'places_model.freezed.dart';
 part 'places_model.g.dart';

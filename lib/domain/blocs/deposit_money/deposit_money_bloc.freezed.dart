@@ -448,8 +448,6 @@ abstract class _$$_LoadedCopyWith<$Res> {
       __$$_LoadedCopyWithImpl<$Res>;
   @useResult
   $Res call({PlacesModelDM? placesModelDM});
-
-  $PlacesModelDMCopyWith<$Res>? get placesModelDM;
 }
 
 /// @nodoc
@@ -471,18 +469,6 @@ class __$$_LoadedCopyWithImpl<$Res>
               as PlacesModelDM?,
     ));
   }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $PlacesModelDMCopyWith<$Res>? get placesModelDM {
-    if (_value.placesModelDM == null) {
-      return null;
-    }
-
-    return $PlacesModelDMCopyWith<$Res>(_value.placesModelDM!, (value) {
-      return _then(_value.copyWith(placesModelDM: value));
-    });
-  }
 }
 
 /// @nodoc
@@ -503,12 +489,13 @@ class _$_Loaded implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Loaded &&
-            (identical(other.placesModelDM, placesModelDM) ||
-                other.placesModelDM == placesModelDM));
+            const DeepCollectionEquality()
+                .equals(other.placesModelDM, placesModelDM));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, placesModelDM);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(placesModelDM));
 
   @JsonKey(ignore: true)
   @override

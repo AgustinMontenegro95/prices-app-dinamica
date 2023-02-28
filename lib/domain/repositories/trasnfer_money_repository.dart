@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:cost_app_dinamica/data/models/transfer_money_model/transfer_money_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:prices_dinamica/data/models/transfer_money_model/transfer_money_model.dart';
 
 class TransferMoneyRepository {
   Future<TransferMoneyModel> getTransferMoney() async {

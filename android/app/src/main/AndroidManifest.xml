@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cost_app_dinamica">
+    package="ar.com.dinamicaonline.prices">
    <application
-        android:label="cost_app_dinamica"
+        android:label="Costos - DINÁMICA"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

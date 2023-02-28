@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:prices_dinamica/constants/components.dart';
+import 'package:prices_dinamica/domain/blocs/cash_withdrawal/cash_withdrawal_bloc.dart';
+import 'package:prices_dinamica/domain/blocs/deposit_money/deposit_money_bloc.dart';
+import 'package:prices_dinamica/domain/blocs/transfer_money/transfer_money_bloc.dart';
+import 'package:prices_dinamica/domain/repositories/cash_withdrawal_repository.dart';
+import 'package:prices_dinamica/domain/repositories/deposit_money_repository.dart';
+import 'package:prices_dinamica/domain/repositories/trasnfer_money_repository.dart';
+import 'package:prices_dinamica/domain/services/get_material_color.dart';
+import 'package:prices_dinamica/ui/routes/custom_routes.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'package:cost_app_dinamica/constants/components.dart';
-import 'package:cost_app_dinamica/domain/blocs/cash_withdrawal/cash_withdrawal_bloc.dart';
-import 'package:cost_app_dinamica/domain/blocs/deposit_money/deposit_money_bloc.dart';
-import 'package:cost_app_dinamica/domain/blocs/transfer_money/transfer_money_bloc.dart';
-import 'package:cost_app_dinamica/domain/repositories/cash_withdrawal_repository.dart';
-import 'package:cost_app_dinamica/domain/repositories/deposit_money_repository.dart';
-import 'package:cost_app_dinamica/domain/repositories/trasnfer_money_repository.dart';
-import 'package:cost_app_dinamica/domain/services/get_material_color.dart';
-import 'package:cost_app_dinamica/ui/routes/custom_routes.dart';
 
 void main() {
   setPathUrlStrategy();
-  runApp(const MyApp());
+  runApp(const PricesDinamica());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class PricesDinamica extends StatelessWidget {
+  const PricesDinamica({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
           ),
         ],
         child: MaterialApp(
-          title: "cost_app_dinamica",
+          title: "Costos - DINÁMICA",
           debugShowCheckedModeBanner: false,
           theme: ThemeData(primarySwatch: getMaterialColor(primary)),
           builder: (context, child) {

@@ -1,11 +1,11 @@
-import 'package:cost_app_dinamica/domain/blocs/deposit_money/deposit_money_bloc.dart';
-import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/cost.dart';
-import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/title_column.dart';
-import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/value_column.dart';
-import 'package:cost_app_dinamica/ui/pages/deposit_money/widgets/zero_cost.dart';
-import 'package:cost_app_dinamica/ui/widgets/Loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:prices_dinamica/domain/blocs/deposit_money/deposit_money_bloc.dart';
+import 'package:prices_dinamica/ui/pages/deposit_money/widgets/cost.dart';
+import 'package:prices_dinamica/ui/pages/deposit_money/widgets/title_column.dart';
+import 'package:prices_dinamica/ui/pages/deposit_money/widgets/value_column.dart';
+import 'package:prices_dinamica/ui/pages/deposit_money/widgets/zero_cost.dart';
+import 'package:prices_dinamica/ui/widgets/loading.dart';
 
 class DepositMoneyPage extends StatefulWidget {
   const DepositMoneyPage({super.key});

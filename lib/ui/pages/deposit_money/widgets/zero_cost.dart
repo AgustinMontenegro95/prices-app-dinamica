@@ -1,5 +1,5 @@
-import 'package:cost_app_dinamica/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:prices_dinamica/constants/components.dart';
 
 class ZeroCost extends StatelessWidget {
   const ZeroCost({super.key});
